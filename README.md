@@ -59,6 +59,10 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+
+A closure is an enclosed function that references its outer function to process an invocation.
+Therefore, a closure gives you a way in to an outer function's scope from the enclosed function.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -80,9 +84,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+Closure is used between the inner function and outer function of personalDice. You can tell because the inner function has to reach into the outer function to grab a value (name) defined in the outer function.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+The value for ${name} is always the same and the value ${newRoll} could change.
+
 c. What is the lexical scope of `newRoll`? 
 
+    Math.floor() and Math.random()
 
 ### Task 3 - Stretch Goals
 
